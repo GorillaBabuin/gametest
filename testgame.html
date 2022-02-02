@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>тест</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style type="text/css">
+    .bigbox{
+    	background-color: #A9A9A9;
+    	height: 600px;
+    	width: 1000px;
+    	margin: auto;
+    }
+    .banner{
+        background-color: #708090;
+        height: 100px;
+        width: 1000px;
+    }
+    .testbox1{
+    	background-color: #778899;
+    	height: 400px;
+    	width: 1000px;
+    	margin-top: 50px;
+    	display: block;
+
+    }
+    .testbox2{
+    	background-color: #778899;
+    	height: 400px;
+    	width: 1000px;
+    	margin-top: 50px;
+    	display: none;
+
+    }
+    .testbox3{
+    	background-color: #778899;
+    	height: 400px;
+    	width: 1000px;
+    	margin-top: 50px;
+    	display: none;
+
+    }
+    .question{
+        background-color: #696969;
+        height: 75px;
+        width: 1000px;
+        border: solid;
+    	border-width: 1px;
+    }
+    .keybox{
+    	background-color: #778899;
+    	height: 325px;
+    	width: 1000px;
+    	display: flex;
+    }
+    .key1-1{
+    	background-color: #C0C0C0;
+    	height: 325px;
+    	width: 200px;
+    	border: solid;
+    	border-width: 1px;
+    }
+    .key1-2{
+    	background-color: #C0C0C0;
+    	height: 325px;
+    	width: 200px;
+    	margin-left: 200px;
+    	border: solid;
+    	border-width: 1px;
+    }
+    .key1-3{
+    	background-color: #C0C0C0;
+    	height: 325px;
+    	width: 200px;
+    	margin-left: 200px;
+    	border: solid;
+    	border-width: 1px;
+    }
+    .key2-1{
+    	background-color: #C0C0C0;
+    	height: 325px;
+    	width: 200px;
+    	border: solid;
+    	border-width: 1px;
+    }
+    .key2-2{
+    	background-color: #C0C0C0;
+    	height: 325px;
+    	width: 200px;
+    	margin-left: 200px;
+    	border: solid;
+    	border-width: 1px;
+    }
+    .key2-3{
+    	background-color: #C0C0C0;
+    	height: 325px;
+    	width: 200px;
+    	margin-left: 200px;
+    	border: solid;
+    	border-width: 1px;
+    }
+    .key3-1{
+    	background-color: #C0C0C0;
+    	height: 325px;
+    	width: 200px;
+    	border: solid;
+    	border-width: 1px;
+    }
+    .key3-2{
+    	background-color: #C0C0C0;
+    	height: 325px;
+    	width: 200px;
+    	margin-left: 200px;
+    	border: solid;
+    	border-width: 1px;
+    }
+    .key3-3{
+    	background-color: #C0C0C0;
+    	height: 325px;
+    	width: 200px;
+    	margin-left: 200px;
+    	border: solid;
+    	border-width: 1px;
+    }
+	</style>
+</head>
+<body class="bg-dark">
+ <div class="bigbox">
+ 	<div class="banner">
+ 		
+ 	</div>
+
+ 	<div class="testbox1">
+ 		<div class="question">
+ 			какая самая лучшая буква?
+ 		</div>
+ 		<div class="keybox">
+ 			<div class="key1-1">
+ 				й
+ 			</div>
+ 			<div class="key1-2">
+ 				ы
+ 			</div>
+ 			<div class="key1-3">
+ 				ё
+ 			</div>
+ 		</div>
+ 	</div>
+ 	<div class="testbox2">
+ 		<div class="question">
+ 			бебра?
+ 		</div>
+ 		<div class="keybox">
+ 			<div class="key2-1">
+ 			бебра	
+ 			</div>
+ 			<div class="key2-2">
+ 			бебра!	
+ 			</div>
+ 			<div class="key2-3">
+ 			не бебра	
+ 			</div>
+ 		</div>
+ 	</div>
+ 	<div class="testbox3">
+ 		<div class="question">
+ 			ыыыыыыыыыыыыыыыыыыыы
+ 		</div>
+ 		<div class="keybox">
+ 			<div class="key3-1">
+ 				ы
+ 			</div>
+ 			<div class="key3-2">
+ 				ы
+ 			</div>
+ 			<div class="key3-3">
+ 				ы
+ 			</div>
+ 		</div>
+ 	</div>
+ </div>
+ <script type="text/javascript">
+    document.querySelector('.key1-1').onclick = function() {
+	document.querySelector('.testbox1').style.display = "none"
+	document.querySelector('.testbox2').style.display = "block"
+	alert("правильно")
+	}
+	document.querySelector('.key2-2').onclick = function() {
+	document.querySelector('.testbox2').style.display = "none"
+	document.querySelector('.testbox3').style.display = "block"
+	alert("правильно")
+	}
+	document.querySelector('.key3-3').onclick = function() {
+	document.querySelector('.testbox3').style.display = "none"
+	document.querySelector('.testbox1').style.display = "block"
+	alert("правильно")
+	}
+	document.querySelector('.key1-2').onclick = function() {
+	alert("неправильно")
+	}
+	document.querySelector('.key1-3').onclick = function() {
+	alert("неправильно")
+	}
+	document.querySelector('.key2-1').onclick = function() {
+	alert("неправильно")
+	}
+	document.querySelector('.key2-3').onclick = function() {
+	alert("неправильно")
+	}
+	document.querySelector('.key3-1').onclick = function() {
+	alert("неправильно")
+	}
+	document.querySelector('.key3-2').onclick = function() {
+	alert("неправильно")
+	}
+</script>
+</body>
+</html>
